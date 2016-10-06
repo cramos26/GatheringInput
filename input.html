@@ -5,10 +5,18 @@
 </head>
 
 <body>
-<input type= "text" id="first"> <br>
-<input type= "text" id="last"> <br>
-<input type= "button" id="doneButton" onclick="getName();"> <br>
-<p id="message">       </p>
+  <script>
+function getName() {
+  var fullName;
+  fullName = document.getElementById("first").value;
+  fullName = fullName + " " + document.getElementById("last").value;
+  document.getElementById("message").innerHTML = fullName ;
+}
+  </script>
+<input type= "text" id="first">
+<input type= "text" id="last">
+<button type= "button" id="doneButton" onclick="getName();">Done</button>
+<p id="message">   </p>
 
 </body>
 
